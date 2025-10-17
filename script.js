@@ -140,6 +140,8 @@ const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
 function toggleMobileMenu() {
     mobileMenu.classList.toggle('open');
     mobileMenuOverlay.classList.toggle('open');
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
 }
 
 mobileMenuToggle.addEventListener('click', toggleMobileMenu);
@@ -150,5 +152,13 @@ mobileNavItems.forEach(item => {
     item.addEventListener('click', () => {
         mobileMenu.classList.remove('open');
         mobileMenuOverlay.classList.remove('open');
+        document.body.style.overflow = ''; // Restore scrolling
     });
+});
+
+// Close mobile menu when pressing Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+        toggleMobileMenu();
+    }
 });
