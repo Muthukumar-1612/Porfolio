@@ -890,6 +890,81 @@ body.light footer {
     .mobile-menu {
         top: 65px;
     }
+
+    .site-header .text-2xl {
+        font-size: 1.25rem !important;
+    }
+    
+    .site-header .flex.items-center.gap-3 {
+        gap: 8px !important;
+    }
+    
+    .site-header i.fa-code {
+        font-size: 1rem !important;
+    }
+
+    #about .text-2xl.font-semibold.text-blue-400.mb-6 {
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* Also center the about content */
+    #about .grid.grid-cols-1.md\:grid-cols-2 > div:first-child {
+        text-align: center;
+    }
+
+    #about .text-justify {
+        text-align: left !important;
+        text-align: start !important;
+        word-spacing: normal;
+        letter-spacing: normal;
+        line-height: 1.6;
+    }
+    
+    #about p.text-slate-300 {
+        text-align: left;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+        word-spacing: normal;
+    }
+
+    #contact .grid.grid-cols-1.md\:grid-cols-2 > div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact .flex.items-start,
+    #contact .flex.items-center {
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #contact .flex.items-start .mr-4,
+    #contact .flex.items-center .mr-4 {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+    
+    #contact .flex.items-start,
+    #contact .flex.items-center {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contact .pt-6.flex.space-x-4 {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #contact .contact-info,
+    #contact .connect-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 /* Extra small devices */
