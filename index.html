@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Muthukumar | Full Stack Developer Portfolio</title>
+
+    <!-- Tailwind (utility-first) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+    <!-- Header -->
+    <header class="glass fixed top-0 left-0 w-full z-50 site-header">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="flex items-center justify-between py-4">
+                <a href="#home" class="text-2xl font-bold text-white flex items-center gap-3">
+                    <i class="fas fa-code text-blue-400"></i>
+                    <span class="gradient-heading">Muthukumar</span>
+                </a>
+
+                <div class="flex items-center gap-4 ml-auto">
+                    <nav class="hidden md:flex items-center">
+                        <a href="#home" class="nav-pill">Home</a>
+                        <a href="#about" class="nav-pill">About</a>
+                        <a href="#skills" class="nav-pill">Skills</a>
+                        <a href="#projects" class="nav-pill">Projects</a>
+                        <a href="#contact" class="nav-pill">Contact</a>
+                    </nav>
+
+                    <div class="flex items-center gap-3">
+                        <button id="darkToggle"
+                            class="p-2 rounded-lg border border-transparent hover:bg-slate-800 transition-all duration-300">
+                            <i id="darkToggleIcon" class="fas fa-moon text-blue-400 text-lg"></i>
+                        </button>
+
+                        <button id="mobileMenuToggle"
+                            class="md:hidden p-2 rounded-lg hover:bg-slate-800 transition-all duration-300">
+                            <i class="fas fa-bars text-blue-400 text-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#home" class="mobile-nav-item">Home</a>
+        <a href="#about" class="mobile-nav-item">About</a>
+        <a href="#skills" class="mobile-nav-item">Skills</a>
+        <a href="#projects" class="mobile-nav-item">Projects</a>
+        <a href="#contact" class="mobile-nav-item">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="min-h-screen flex items-center pt-24 pb-16">
+        <div class="max-w-screen-xl mx-auto px-6 w-full">
+            <div class="content-container py-12 md:py-24" data-aos="fade-up">
+                <div class="outline-box mx-auto" style="padding:0;">
+                    <div class="hero-card" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="text-center">
+                            <div class="hero-text-container">
+                                <h1 class="hero-title">
+                                    Hi, I'm <span id="changingText"
+                                        class="typing hero-highlight gradient-heading">Muthukumar</span>
+                                </h1>
+
+                                <p class="mt-8 text-lg md:text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto">
+                                    Crafting powerful, accessible, and intuitive web experiences with modern
+                                    technologies and best practices.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-6 mt-12">
+                                <a href="#projects" class="btn-primary" data-aos="fade-right" data-aos-delay="250">
+                                    <i class="fas fa-eye"></i><span>View My Work</span>
+                                </a>
+                                <a href="#contact" class="btn-outline" data-aos="fade-left" data-aos-delay="250">
+                                    <i class="fas fa-paper-plane"></i><span>Contact Me</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="content-container" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-heading">About Me</h2>
+
+                <div class="outline-box" data-aos="fade-up" data-aos-delay="120">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-blue-400 mb-6">Full Stack Developer</h3>
+                            <p class="text-slate-300 mb-6 text-lg leading-relaxed text-justify">
+                                I'm a passionate Full Stack Developer with expertise in React and Node.js. I love
+                                building modern web applications that solve real-world problems and provide exceptional
+                                user experiences.
+                            </p>
+                            <p class="text-slate-300 mb-6 text-lg leading-relaxed text-justify">
+                                With a strong foundation in both frontend and backend technologies, I enjoy working on
+                                the entire development lifecycle - from concept to deployment.
+                            </p>
+                            <p class="text-slate-300 mb-8 text-lg leading-relaxed text-justify">
+                                When I'm not coding, you can find me exploring new technologies, contributing to
+                                open-source projects, or learning about the latest trends in web development.
+                            </p>
+
+                            <div class="flex flex-wrap gap-4 mt-8">
+                                <a href="pdf/MUTHUKUMAR K.pdf" download="Muthukumar_FullStack_Developer_Resume.pdf"
+                                    class="btn-primary">
+                                    <i class="fas fa-download"></i><span>Download Resume</span>
+                                </a>
+                                <a href="#contact" class="btn-outline">
+                                    <i class="fas fa-paper-plane"></i><span>Contact Me</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div
+                                class="w-72 h-72 rounded-full border-0 border-blue-400/30 shadow-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-8xl transform hover:scale-105 transition-transform duration-300">
+                                <img src="images/MUTHUKUMAR.png" alt="Muthukumar">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-20">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="content-container" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-heading">Technical Skills</h2>
+
+                <div class="outline-box" data-aos="fade-up" data-aos-delay="120">
+                    <!-- Frontend -->
+                    <div class="outline-inner" data-aos="fade-right" data-aos-delay="180">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Frontend Development</h3>
+                        <p class="text-lg text-slate-300 mb-6">Technologies I use to build responsive, accessible, and
+                            performant user interfaces.</p>
+
+                        <div class="skill-marquee">
+                            <div id="skillTrackLeft" class="skill-track left">
+                                <!-- Frontend skills will be duplicated here by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="outline-inner mt-8" data-aos="fade-left" data-aos-delay="220">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Backend Development</h3>
+                        <p class="text-lg text-slate-300 mb-6">Tools and technologies I use to create robust server-side
+                            applications.</p>
+
+                        <div class="skill-marquee">
+                            <div id="skillTrackRight" class="skill-track right">
+                                <!-- Backend skills will be duplicated here by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other skills -->
+                    <div class="outline-inner mt-8" data-aos="fade-up" data-aos-delay="260">
+                        <h4 class="text-xl font-semibold text-blue-400 mb-4">Other Skills</h4>
+                        <p class="text-lg text-slate-300 mb-6">Additional expertise and methodologies I bring to
+                            projects</p>
+                        <div class="flex flex-wrap">
+                            <span class="pill">CI/CD Pipeline</span>
+                            <span class="pill">Agile Methodology</span>
+                            <span class="pill">UI/UX Design</span>
+                            <span class="pill">Test-driven Development</span>
+                            <span class="pill">RESTful APIs</span>
+                            <span class="pill">Responsive Design</span>
+                            <span class="pill">Authentication & Authorization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-20">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="content-container" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-heading">Projects</h2>
+
+                <div class="outline-box" data-aos="fade-up" data-aos-delay="140">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <!-- Blog Web App -->
+                        <div class="proj-card" data-aos="zoom-in" data-aos-delay="180">
+                            <div class="proj-media">
+                                <img src="images/B.png" alt="Blog Web App Screenshot">
+                            </div>
+                            <div class="proj-content">
+                                <h4 class="font-semibold text-blue-400 text-xl">Blog Web App</h4>
+                                <p class="text-slate-300 mb-3">Full-stack blog platform with authentication, CRUD
+                                    operations, and responsive design.</p>
+                                <div class="tech-stack mb-4">
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="tech-pill">React.js</span>
+                                        <span class="tech-pill">Node.js</span>
+                                        <span class="tech-pill">PostgreSQL</span>
+                                        <span class="tech-pill">JWT</span>
+                                        <span class="tech-pill">Redux</span>
+                                        <span class="tech-pill">Cloudinary</span>
+                                    </div>
+                                </div>
+                                <div class="proj-actions">
+                                    <a class="btn-primary text-sm"
+                                        href="https://blog-web-app-react-frontend.onrender.com/" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a class="btn-outline text-sm"
+                                        href="https://github.com/Muthukumar-1612/Blog-Web-App-React" target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Book Notes Hub -->
+                        <div class="proj-card" data-aos="zoom-in" data-aos-delay="220">
+                            <div class="proj-media">
+                                <img src="images/BN.png" alt="Book Notes Hub Screenshot">
+                            </div>
+                            <div class="proj-content">
+                                <h4 class="font-semibold text-blue-400 text-xl">Book Notes Hub</h4>
+                                <p class="text-slate-300 mb-3">Book discovery platform integrating OpenLibrary API for
+                                    quick book details and notes management.</p>
+                                <div class="tech-stack mb-4">
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="tech-pill">HTML5</span>
+                                        <span class="tech-pill">CSS3</span>
+                                        <span class="tech-pill">JavaScript</span>
+                                        <span class="tech-pill">EJS</span>
+                                        <span class="tech-pill">Node.js</span>
+                                        <span class="tech-pill">Express.js</span>
+                                        <span class="tech-pill">PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <div class="proj-actions">
+                                    <a class="btn-primary text-sm" href="https://book-notes-hub-gxlh.onrender.com/"
+                                        target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a class="btn-outline text-sm"
+                                        href="https://github.com/Muthukumar-1612/Book-Notes-Hub" target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NASA APOD Viewer -->
+                        <div class="proj-card" data-aos="zoom-in" data-aos-delay="260">
+                            <div class="proj-media">
+                                <img src="images/A.png" alt="NASA APOD Viewer Screenshot">
+                            </div>
+                            <div class="proj-content">
+                                <h4 class="font-semibold text-blue-400 text-xl">NASA APOD Viewer</h4>
+                                <p class="text-slate-300 mb-3">Interactive gallery using NASA's Astronomy Picture of the
+                                    Day API with search and modal features.</p>
+                                <div class="tech-stack mb-4">
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="tech-pill">EJS</span>
+                                        <span class="tech-pill">CSS3</span>
+                                        <span class="tech-pill">JavaScript</span>
+                                        <span class="tech-pill">Node.js</span>
+                                        <span class="tech-pill">Express.js</span>
+                                        <span class="tech-pill">NASA API</span>
+                                    </div>
+                                </div>
+                                <div class="proj-actions">
+                                    <a class="btn-primary text-sm"
+                                        href="https://astronomy-picture-of-the-day-19v0.onrender.com/" target="_blank">
+                                        <i class="fas fa-external-link-alt"></i> Live Demo
+                                    </a>
+                                    <a class="btn-outline text-sm"
+                                        href="https://github.com/Muthukumar-1612/nasa-apod-viewer" target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <div class="content-container" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 gradient-heading">Get In Touch</h2>
+
+                <div class="outline-box" data-aos="fade-up" data-aos-delay="120">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-semibold mb-6 text-blue-400">Contact Information</h3>
+                            <p class="text-slate-300 mb-8 text-lg">Feel free to reach out through any of these channels.
+                            </p>
+
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope text-blue-400 text-xl mr-4 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-medium text-lg mb-1">Email</h4>
+                                        <a href="mailto:muthukumar16122002@gmail.com"
+                                            class="text-slate-300 hover:text-blue-400 transition-colors text-lg">muthukumar16122002@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt text-blue-400 text-xl mr-4 mt-1"></i>
+                                    <div>
+                                        <h4 class="font-medium text-lg mb-1">Location</h4>
+                                        <p class="text-slate-300 text-lg">Madurai, Tamil Nadu</p>
+                                    </div>
+                                </div>
+
+                                <div class="pt-6 flex space-x-4">
+                                    <a href="https://github.com/Muthukumar-1612" target="_blank" class="contact-icon">
+                                        <i class="fab fa-github text-lg"></i>
+                                    </a>
+                                    <a href="https://linkedin.com/in/muthukumar1612/" target="_blank"
+                                        class="contact-icon">
+                                        <i class="fab fa-linkedin-in text-lg"></i>
+                                    </a>
+                                    <a href="mailto:muthukumar16122002@gmail.com" class="contact-icon">
+                                        <i class="fas fa-envelope text-lg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p-8">
+                            <h3 class="text-2xl font-semibold mb-6 text-blue-400">Connect With Me</h3>
+                            <p class="text-slate-300 mb-8 text-lg">I'm always interested in new opportunities and
+                                collaborations. Let's connect!</p>
+
+                            <div class="space-y-6">
+                                <div class="flex items-center">
+                                    <i class="fab fa-linkedin text-blue-400 text-2xl mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium text-lg mb-1">LinkedIn</h4>
+                                        <a href="https://linkedin.com/in/muthukumar1612/" target="_blank"
+                                            class="text-slate-300 hover:text-blue-400 transition-colors text-lg">linkedin.com/in/muthukumar1612</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center">
+                                    <i class="fab fa-github text-blue-400 text-2xl mr-4"></i>
+                                    <div>
+                                        <h4 class="font-medium text-lg mb-1">GitHub</h4>
+                                        <a href="https://github.com/Muthukumar-1612" target="_blank"
+                                            class="text-slate-300 hover:text-blue-400 transition-colors text-lg">github.com/Muthukumar-1612</a>
+                                    </div>
+                                </div>
+
+                                <div class="pt-6">
+                                    <p class="text-slate-300 text-lg">I typically respond to emails within 24 hours.
+                                        Looking forward to hearing from you!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 text-center">
+        <div class="max-w-screen-xl mx-auto px-6">
+            <p class="text-slate-400 text-lg">© <span id="year"></span> Muthukumar | Full Stack Developer</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
