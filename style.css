@@ -599,7 +599,7 @@ body.light .text-slate-200 {
 }
 
 .mobile-menu-overlay {
-     position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -1073,7 +1073,7 @@ body.light footer {
         font-size: 1.1rem !important;
     }
     
-    /* Better paragraph spacing  */
+    /* Better paragraph spacing */
     #about p.text-slate-300 {
         font-size: 1rem;
         line-height: 1.7;
